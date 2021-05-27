@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   return (
     <Container>
       <Header />
-      <Main />
+      <Main>A next.js web-based manager for maven dependencies</Main>
       <Footer />
     </Container>
   );

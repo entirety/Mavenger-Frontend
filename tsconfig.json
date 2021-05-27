@@ -1,0 +1,37 @@
+{
+  "include": ["**/*"],
+  "exclude": ["node_modules",
+    "test/*"
+  ],
+  "compilerOptions": {
+    "jsx": "preserve",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "noEmit": true,
+    "strict": false,
+    "target": "es5",
+    "allowJs": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@test": ["test"],
+      "@test/*": ["test/*"],
+      "@redux": ["src/redux"],
+      "@redux/*": ["src/redux/*"],
+      "@public": ["public"],
+      "@public/*": ["public/*"],
+      "@styles": ["src/styles"],
+      "@styles/*": ["src/styles/*"],
+      "@components": ["src/components"],
+      "@components/*": ["src/components/*"],
+      "@components/icons": ["src/components/icons"],
+      "@components/icons/*": ["src/components/icons/*"]
+    }
+  }
+}

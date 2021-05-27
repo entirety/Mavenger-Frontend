@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "extends" : [
+    "airbnb-typescript/base",
+    "@edenjs/eden"
+  ],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "settings": {
+    "import/extensions": [
+      ".js", ".mjs", ".jsx", ".ts", ".tsx", ".d.ts"
+    ]
+  },
+  "globals": {
+    "JSX": "readonly"
+  },
+  "rules": {
+    "max-len": "off",
+    "no-empty": "off",
+    "no-bitwise": "off",
+    "no-console": "off",
+    "comma-dangle": "off",
+    "import/order": "off",
+    "global-require": "off",
+    "import/extensions": "off",
+    "consistent-return" : "off",
+    "no-underscore-dangle": "off",
+    "no-use-before-define": "off",
+    "object-curly-newline": "off",
+    "no-prototype-builtins": "off",
+    "newline-per-chained-call": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/no-dynamic-require": "off",
+    "lines-between-class-members": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "import/no-extraneous-dependencies": "off",
+    "@typescript-eslint/lines-between-class-members": "off",
+
+    "react/jsx-filename-extension": [2,
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ]
+  }
+}

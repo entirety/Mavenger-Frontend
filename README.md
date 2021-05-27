@@ -1,3 +1,3 @@
-# Mavenger
+# Mavenger - Frontend
 
-A next.js web-based manager for maven dependencies.
+A Next.js client for Mavenger, a web-based manager for maven artifacts.

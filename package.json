@@ -29,9 +29,9 @@
     "start": "next start",
     "build": "next build",
     "build:analyze": "ANALYZE=true npm run build",
-    "svgr": "npx @svgr/cli -d src/components/icons --ignore-existing --icon --typescript public/icons",
-    "lint": "eslint -f ./node_modules/eslint-friendly-formatter '**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": "eslint -f ./node_modules/eslint-friendly-formatter --fix '**/*.{js,jsx,ts,tsx}'"
+    "svgr": "npx @svgr/cli -d src/components/icons --ignore-existing --icon --typescript src/public/icons",
+    "lint": "eslint -f ./node_modules/eslint-friendly-formatter src",
+    "lint:fix": "eslint -f ./node_modules/eslint-friendly-formatter --fix src"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^10.2.3",
@@ -75,6 +75,6 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "npm run lint"
+    "src/**/*.{js,jsx,ts,tsx}": "eslint -f ./node_modules/eslint-friendly-formatter"
   }
 }

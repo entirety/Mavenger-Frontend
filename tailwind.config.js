@@ -1,6 +1,6 @@
 // Export Tailwind CSS config
 module.exports = {
-  purge    : ['./src/**/*.{jsx,tsx}', './pages/**/*.{jsx,tsx}'],
+  purge    : ['./src/**/*.{jsx,tsx}'],
   plugins  : [],
   darkMode : 'media',
 

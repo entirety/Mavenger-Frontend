@@ -6,4 +6,4 @@ const bundleAnalyzer = require('@next/bundle-analyzer');
 const config = {};
 
 // Export next.js config
-module.exports = withPlugin(([[bundleAnalyzer({ enabled : process.env.ANALYZE === 'true' })]]), config);
+module.exports = withPlugin([[bundleAnalyzer({ enabled: process.env.ANALYZE === 'true' })]], config);

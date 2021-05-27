@@ -1,16 +1,11 @@
 {
   "root": true,
-  "extends" : [
-    "airbnb-typescript/base",
-    "@edenjs/eden"
-  ],
+  "extends": ["airbnb-typescript/base", "@edenjs/eden"],
   "parserOptions": {
     "project": ["./tsconfig.json"]
   },
   "settings": {
-    "import/extensions": [
-      ".js", ".mjs", ".jsx", ".ts", ".tsx", ".d.ts"
-    ]
+    "import/extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx", ".d.ts"]
   },
   "globals": {
     "JSX": "readonly"
@@ -20,11 +15,12 @@
     "no-empty": "off",
     "no-bitwise": "off",
     "no-console": "off",
+    "key-spacing": "off",
     "comma-dangle": "off",
     "import/order": "off",
     "global-require": "off",
     "import/extensions": "off",
-    "consistent-return" : "off",
+    "consistent-return": "off",
     "no-underscore-dangle": "off",
     "no-use-before-define": "off",
     "object-curly-newline": "off",
@@ -39,7 +35,8 @@
     "import/no-extraneous-dependencies": "off",
     "@typescript-eslint/lines-between-class-members": "off",
 
-    "react/jsx-filename-extension": [2,
+    "react/jsx-filename-extension": [
+      2,
       {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }

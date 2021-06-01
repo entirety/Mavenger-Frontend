@@ -17,8 +17,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const data: ResponseInterface = await registerRes.json();
 
     if (registerRes.ok) {
-      // FIXME: When registration is successful this throws a 500 error
-      res.json({ message: 'success' });
+      res.json(data);
     } else {
       res.status(data.statusCode).json(data);
     }

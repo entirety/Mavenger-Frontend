@@ -4,20 +4,21 @@ import { ResponseInterface } from './response.interface';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
-    const { username, password } = req.body;
+    const { name, email, username, password } = req.body;
 
-    const loginRes: Response = await fetch(`${API_URL}/auth/signin`, {
+    const registerRes: Response = await fetch(`${API_URL}/auth/signup`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ username, password }),
+      body: JSON.stringify({ name, email, username, password }),
     });
 
-    const data: ResponseInterface = await loginRes.json();
+    const data: ResponseInterface = await registerRes.json();
 
-    if (loginRes.ok) {
-      res.json(data);
+    if (registerRes.ok) {
+      // FIXME: When registration is successful this throws a 500 error
+      res.json({ message: 'success' });
     } else {
       res.status(data.statusCode).json(data);
     }
